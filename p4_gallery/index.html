@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portades</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;500&family=Poppins:wght@400;500;600;900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 32px;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+        :root{
+            --m_clar: #ffe8d6;
+            --m_mig:#ddbea9;
+            --m_fosc:#cb997e;
+            --v_clar:#b7b7a4;
+            --v_mig:#a5a58d;
+            --v_fosc:#6b705c;
+            --poppins: 'Poppins', sans-serif;
+            --bitter: 'Bitter', serif;
+        }
+        .container{
+            padding: 0 3em;
+        }
+        body>header .container{
+            display: flex;
+            flex-direction: column;
+            justify-content:space-between;
+            background-color: var(--m_clar);
+            height: 100vh;
+        }
+        #portades .container{
+            display: flex;
+        }
+        #portades .container h3{
+            width: 100%;
+        }
+        section{
+            height: 80vh;
+        }
+        footer{
+            height: 50vh;
+        }
+        
+        #portades{
+            background-color: var(--v_clar);
+        }
+        #dissenadorxs{
+            background-color: var(--m_mig);
+        }
+        #xxss{
+            background-color: var(--v_clar);
+        }
+        h1{
+            font-size: 3em;
+            font-family: var(--poppins);
+            font-weight: 900;
+            color: var(--m_fosc);
+        }
+        h2{
+            font-size: 2em;
+            font-family: var(--bitter);
+            font-weight: 400;
+            color: var(--m_fosc);
+        }
+        nav a{
+            font-size: 1.5em;
+        }
+        h3{
+            font-family: var(--poppins);
+        }
+        .cover{
+            padding: 1.2em;
+            margin: 0.5em;
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            height: 300px;
+            background-color: var(--v_fosc);
+        }
+        .cover header{
+            font-size: 0.5em;
+        }
+        .cover_img{
+            
+            background-color: blue;
+            overflow: hidden;
+            width: max-content;
+            height: max-content;
+            
+        }
+        .cover_img img{
+            
+
+
+            /* height: 100%; */
+        }
+        /* @media (max-width:550px){
+            body{
+                font-size: 15px;
+            }
+        } */
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <hgroup>
+                <h1>Portades de disc</h1>
+                <h2>
+                    "Col·lecció gràfica de portades de disc centrant-nos en l'actualitat el disseny i els dissenyadors"
+                </h2>
+            </hgroup>
+            <nav>
+                <a href="#portades">portades</a>
+                <a href="#dissenyadorxs">dissenyadorxs</a>
+                <a href="#xxss">xxss</a>
+            </nav>
+        </div>  
+    </header>
+    <main>
+        <section id="portades">   
+                <h3>Portades</h3>
+                <div class="container">
+                <div class="cover">
+                    <div class="cover_img">
+                        <img src="img/covers/indigo.jpeg" alt="">
+                    </div>
+                    <header>
+                        <h4>Indigo</h4>
+                    </header>
+                </div>
+                <div class="cover">
+                    <div class="cover_img">
+                        <img src="img/designers/ryder_pipps.jpeg" alt="">
+                    </div>
+                    <header>
+                        <h4>Martyrs Reward</h4>
+                    </header>
+                </div>
+                <div class="cover">
+                    <div class="cover_img">
+                        <img src="img/covers/letitbe_beatles.jpeg" alt="">
+                    </div>
+                    <header>
+                        <h4>The Beatles</h4>
+                    </header>
+                </div>
+                <div class="cover">
+                    <div class="cover_img">
+                        <img src="img/covers/Low-Hey-What.jpeg" alt="">
+                    </div>
+                    <header>
+                        <h4>Low</h4>
+                    </header>
+                </div>
+            </div>
+        </section>
+
+        <section id="dissenyadorxs">
+                <div class="container">
+                    <h3>Dissenyadorxs</h3>
+                </div>
+        </section>
+        
+    </main>
+    <footer id="xxss">
+        <h3>xxss</h3>
+    </footer>
+</body>
+</html>
